@@ -17,11 +17,11 @@ def guess_the_number():
         attempts += 1
 
         if guess < 1 or guess > 100:
-            print("不要亂輸入範圍外的數字啦🥲")
+            print("不能亂輸入範圍外的數字")
         elif guess < number:
-            print("太小了，再試一次 👇")
+            print("太小了，再試一次")
         elif guess > number:
-            print("太大了，再試一次 👆")
+            print("太大了，再試一次")
         else:
             print(f"🎉 恭喜你猜對了！答案就是 {number}，你總共猜了 {attempts} 次。")
             break
